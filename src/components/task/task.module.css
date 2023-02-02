@@ -1,0 +1,52 @@
+.container {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--gray--500);
+  border: 1px solid var(--gray--400);
+  margin: 0.5rem;
+}
+
+.container p {
+  font-size: 0.875rem;
+  line-height: 1.18rem;
+  color: var(--gray--200);
+  margin-right: auto;
+}
+.checkbox {
+  min-width: 1.125rem;
+  height: 1.125rem;
+  background: none;
+  border: none;
+}
+.checkbox div {
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+}
+
+.deleteButton {
+  background: none;
+  border: none;
+  color: var(--gray--300);
+  margin: 0;
+}
+
+.checkbox svg {
+  width: 100%;
+  height: 100%;
+  color: var(--purple);
+}
+
+.textCompleted {
+  background: none;
+  border: none;
+  color: var(--purple);
+  text-decoration: line-through;
+  font-size: 17px;
+}

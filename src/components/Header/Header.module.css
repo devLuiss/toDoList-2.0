@@ -1,0 +1,84 @@
+.header {
+  background-color: var(--gray--700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12.5rem;
+  position: relative;
+}
+
+.header img {
+  width: 100%;
+  max-width: 30rem;
+}
+
+.header img:hover {
+  animation: treme 0.2s;
+  animation-iteration-count: 3;
+  transition: all ease 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes treme {
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: 5px;
+  }
+  50% {
+    margin-left: 0;
+  }
+  75% {
+    margin-left: -5px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+.newTaskForm {
+  position: absolute;
+  height: 3.375rem;
+  bottom: calc(-3.375rem / 2);
+  width: 100%;
+  max-width: 46rem;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 1rem;
+}
+
+.newTaskForm input {
+  height: 100%;
+  flex: 1;
+  color: var(--gray--100);
+  background: var(--gray--500);
+  border: 1px solid var(--gray--700);
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+.newTaskForm input::placeholder {
+  color: var(--gray--100);
+}
+
+.newTaskForm button {
+  height: 100%;
+  padding: 0 1rem;
+  background: var(--blue-dark);
+  color: var(--gray--100);
+  border: none;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.newTaskForm button:hover {
+  background: #fff;
+  color: var(--blue-dark);
+  border: 1px solid var(--blue-dark);
+}
